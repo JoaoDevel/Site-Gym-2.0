@@ -8,7 +8,7 @@ const App = () => {
         <h1>ola 1</h1>
       </section>
       <section className="section second-section">
-        <h1>ola</h1>
+        <h1>ola 2</h1>
       </section>
       <section className="section">
         <h1>ola</h1>
