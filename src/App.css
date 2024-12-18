@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #e4e5dc;
+}
+
+.section {
+  background: red;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+.second-section {
+  text-align: center;
+}
