@@ -9,7 +9,7 @@
 
 /*START STYLES TITLE*/
 .title {
-  padding-top: 4vh;
+  padding-top: 5vh;
 
   .tittle-text {
     text-align: center;
@@ -33,8 +33,11 @@
   padding: 30px;
   width: 100%;
 
+  /*SECTION LEFT*/
   .left {
-    padding-top: 7vh;
+    flex: 1;
+    padding-top: 4vh;
+    align-items: center;
 
     p {
       color: rgb(128, 128, 128);
@@ -44,7 +47,7 @@
       padding-bottom: 10px;
     }
     h1 {
-      width: 45%;
+      width: 70%;
       font-size: 1.5rem;
       font-weight: 550;
       font-style: normal;
@@ -52,22 +55,125 @@
     }
 
     .underline-main {
-      width: 38%;
+      margin-top: 15vh;
       border: 0.9px solid rgb(229, 229, 229);
-      margin-top: 10vh;
     }
   }
 
+  /*SECTION CENTER*/
   .center {
-    display: flex;
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    flex: 0.5;
     align-items: center;
-  }
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
 
+    .center-content {
+      background-color: rgb(234, 253, 98);
+      border-radius: 10px;
+      padding: 20px;
+
+      .health {
+        text-align: left;
+        padding: 20px 10px 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgb(128, 128, 128);
+      }
+      .health-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+        .porcent {
+          font-size: 50px;
+          font-weight: 600;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        .porcentN {
+          font-size: 20px;
+          color: rgb(128, 128, 128);
+        }
+        .health-icons {
+          padding: 22px 10px 0 0;
+          color: rgb(128, 128, 128);
+          align-items: center;
+        }
+      }
+      .dates {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+
+        a {
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          font-size: 11px;
+          color: rgb(128, 128, 128);
+          font-weight: 600;
+        }
+        a:hover {
+          border-bottom: 2px solid rgb(66, 66, 66);
+        }
+      }
+      .dates {
+        text-align: center;
+        align-items: center;
+      }
+      .image {
+        text-align: center;
+        align-items: center;
+        img {
+          width: 220px;
+          text-align: center;
+          align-items: center;
+          background: rgb(248, 248, 248);
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .my-fitness {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+
+      button {
+        border: none;
+        background: none;
+        color: rgb(128, 128, 128);
+      }
+      span {
+        padding-left: 34px;
+        font-weight: 600;
+        color: rgb(73, 73, 73);
+        font-size: 15px;
+      }
+    }
+  }
+  /*SECTION RIGHT*/
   .right {
+    flex: 1;
+    margin-top: 40vh;
     display: flex;
     flex-direction: column;
-    margin-top: 40vh;
-    text-align: center;
+    align-items: center;
+
+    .right-content {
+      width: 90%;
+      display: flex;
+      margin-bottom: 30px;
+    }
+    span {
+      padding-left: 10px;
+    }
   }
 }
