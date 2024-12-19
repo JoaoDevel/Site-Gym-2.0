@@ -1,18 +1,15 @@
 import React from "react";
 import "./app.css";
+import Index1 from "./components/section1";
+import Index2 from "./components/section2";
+import Index3 from "./components/section3";
 
 const App = () => {
   return (
     <div className="container">
-      <section className="section first-section">
-        <h1>ola 1</h1>
-      </section>
-      <section className="section second-section">
-        <h1>ola 2</h1>
-      </section>
-      <section className="section">
-        <h1>ola</h1>
-      </section>
+      <Index1 />
+      <Index2 />
+      <Index3 />
     </div>
   );
 };
