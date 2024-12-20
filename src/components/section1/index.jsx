@@ -13,7 +13,7 @@ const Index = () => {
             href=""
             className="py-2 border-b-2 border-transparent hover:border-white"
           >
-            Find Home
+            Find Homes
           </a>
           <a
             href=""
