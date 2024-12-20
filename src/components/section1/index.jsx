@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import Logo from "../../assets/logogym.png";
 import Img from "../../assets/imglogo.jpg";
@@ -67,9 +66,9 @@ const Index = () => {
 
         <p className="mt-5 max-w-[640px] text-white font-light text-sm md:text-[13px]">
           Every rep, every drop of sweat, every minute in the gym brings you
-          closer to your goal. Remember, it's not just about lifting weights,
-          but about lifting yourself up to every challenge.Let's go, you got
-          this!
+          closer to your goal. Remember, it&apos;s not just about lifting
+          weights, but about lifting yourself up to every challenge.Let&apos;s
+          go, you got this!
         </p>
 
         <div className="flex justify-between items-center mt-9">
