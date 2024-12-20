@@ -31,7 +31,10 @@ const Index = () => {
               </button>
               <span>MY FITNESS</span>
             </div>
-            <p className="health">HEALTH</p>
+            <div className="health">
+              <p>HEALTH</p>
+            </div>
+
             <div className="health-content">
               <span className="porcent">
                 87<span className="porcentN">%</span>

@@ -67,17 +67,20 @@
     flex: 0.5;
     align-items: center;
     align-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
 
     .center-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
       background-color: rgb(234, 253, 98);
       border-radius: 10px;
       padding: 20px;
 
       .health {
-        text-align: left;
-        padding: 20px 10px 0 10px;
+        display: flex;
+        width: 100%;
+        padding: 20px 0 0 0;
         font-size: 13px;
         font-weight: 600;
         color: rgb(128, 128, 128);
@@ -85,7 +88,7 @@
       .health-content {
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        width: 100%;
         align-items: center;
 
         .porcent {
@@ -100,7 +103,11 @@
           color: rgb(128, 128, 128);
         }
         .health-icons {
-          padding: 22px 10px 0 0;
+          margin-top: 14px;
+          display: flex;
+          width: 25%;
+          gap: 10px;
+
           color: rgb(128, 128, 128);
           align-items: center;
         }
@@ -111,6 +118,7 @@
         padding: 10px;
         align-items: center;
         text-align: center;
+        gap: 30px;
 
         a {
           align-items: center;
@@ -143,19 +151,23 @@
 
     .my-fitness {
       display: flex;
-      align-items: center;
+      justify-content: space-between;
       padding: 10px;
-
+      width: 100%;
       button {
         border: none;
         background: none;
         color: rgb(128, 128, 128);
       }
+
+      button:hover {
+        color: white;
+      }
       span {
-        padding-left: 34px;
         font-weight: 600;
         color: rgb(73, 73, 73);
         font-size: 15px;
+        margin: 0 auto;
       }
     }
   }
@@ -174,6 +186,32 @@
     }
     span {
       padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: none;
+  }
+  .center {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .right {
+    display: none;
+
+    .right-content {
+      display: none;
+      span {
+        display: none;
+      }
     }
   }
 }
