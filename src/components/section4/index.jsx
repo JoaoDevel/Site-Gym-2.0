@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 const index = () => {
@@ -38,22 +37,22 @@ const index = () => {
             tools. Monitor your workouts nutrition,
             <br /> and overall well-being effortlessly.
           </h2>
-          <button className="bg-[#FFFF] h-12 w-full px-2 rounded-full text-black text-sm font-semibold">
+          <button className="bg-[#FFFF] h-12 w-full px-2 rounded-full text-black text-sm font-semibold cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
             DISCOVER MORE
           </button>
         </div>
       </div>
       <div
         id="container-right"
-        className="flex-[2] rounded-[20px] flex items-end py-8 px-20"
+        className="flex-[2] rounded-[20px] flex flex-col md:flex-row items-end py-8 px-4 md:px-20"
       >
-        <div className="flex justify-between w-full items-end">
+        <div className="flex flex-col md:flex-row justify-between w-full items-end">
           <p className="hidden md:block text-4xl text-white">
             3 <span className="text-[#515151]">/4</span>
           </p>
 
-          <div className="flex flex-col gap-4 w-96 ">
-            <div className="bg-[#EAFE63]  h-48 p-4 flex flex-col justify-between rounded-[20px]">
+          <div className="flex flex-col gap-4 w-full md:w-96">
+            <div className="bg-[#EAFE63] h-48 p-4 flex flex-col justify-between rounded-[20px]">
               <div>
                 <h2 className="text-[#515151] text-md font-normal">
                   Health & fitness
@@ -62,9 +61,8 @@ const index = () => {
                   87 <span className="text-xl text-[#515151]">%</span>
                 </p>
               </div>
-
               <div>
-                <p className="flex justify-end text-black text-lg font-medium">
+                <p className="flex justify-end text-black text-lg font-medium cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -72,10 +70,10 @@ const index = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-arrow-up-right"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-up-right"
                   >
                     <path d="M7 7h10v10" />
                     <path d="M7 17 17 7" />
@@ -84,24 +82,24 @@ const index = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded-[20px] h-48 py-4 px-6 ">
+            <div className="bg-white rounded-[20px] h-48 py-4 px-6">
               <h2 className="mb-3">Routine</h2>
-              <div className="flex items-center gap-3 mb-2">
-                <button className="text-black bg-[#EAFE63] py-2 px-4 text-sm rounded-[20px] font-medium">
+              <div className="flex items-center gap-3 md:mb-2 flex-wrap">
+                <button className="text-black bg-[#EAFE63] py-2 px-4 text-sm rounded-[20px] font-medium cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
                   Exercise
                 </button>
-                <button className="py-2 px-4 text-sm rounded-[20px] font-medium border-2 text-[#515151]">
+                <button className="py-2 px-4 text-sm rounded-[20px] font-medium border-2 text-[#515151] cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
                   Healthy food
                 </button>
-                <button className="py-2 px-4 text-sm rounded-[20px] font-medium border-2 text-[#515151]">
+                <button className="py-2 px-4 text-sm rounded-[20px] font-medium border-2 text-[#515151] cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
                   Gym
                 </button>
               </div>
-              <div className="rounded bg-[#f8f8ff] p-3 flex flex-col gap-2">
+              <div className="hidden md:flex rounded bg-[#f8f8ff] p-3  flex-col gap-2">
                 <h2 className="text-sm text-[#515151] font-medium">
                   3km run today
                 </h2>
-                <div className="w-full border-2 h-6 rounded-full">
+                <div className=" w-full border-2 h-6 rounded-full">
                   <div className="bg-[#EAFE63] w-20 h-full rounded-full"></div>
                 </div>
               </div>

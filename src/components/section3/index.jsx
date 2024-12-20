@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 const Index = () => {
@@ -14,7 +13,7 @@ const Index = () => {
           Sign up for our waitlist now to be the first to access exclusive
           content
         </p>
-        <button className="bg-[#FFFF] h-12 w-[160px]  px-2 rounded-full text-black text-sm font-semibold">
+        <button className="bg-[#FFFF] h-12 w-[160px]  px-2 rounded-full text-black text-sm font-semibold cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
           JOIN NOW
         </button>
       </div>

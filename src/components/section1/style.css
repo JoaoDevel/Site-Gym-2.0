@@ -1,10 +1,24 @@
 .container-section1 {
   height: 80vh;
   border-radius: 20px;
-  background: url("../../assets/background3.jpg") no-repeat center center/cover;
+  overflow: hidden;
   padding: 16px 25px;
+  background: url("../../assets/background3.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#menu-modal {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
 }
