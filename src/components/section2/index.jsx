@@ -18,7 +18,7 @@ const Index = () => {
           <p>MONDAY 22 </p>
           <h1>
             Hey Noah! You could boost your performance by up to 30% every week!
-            Let’s take your eco-conscious journey to the next level!
+            Let’s take your eco-conscious journey to the next levels!
           </h1>
           <hr className="underline-main" />
         </section>
