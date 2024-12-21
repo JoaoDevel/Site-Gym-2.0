@@ -31,7 +31,7 @@ const Index = () => {
         >
           <ul className="text-white text-md font-normal flex flex-col gap-9">
             <li className="pb-2 border-b-2 border-transparent hover:border-white">
-              Find Home
+              Find Homes
             </li>
             <li className="pb-2 border-b-2 border-transparent hover:border-white">
               Pratise
