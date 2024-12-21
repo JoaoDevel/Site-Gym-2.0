@@ -128,7 +128,7 @@ const Index = () => {
             LEARN MORE
           </button>
           <button className="md:flex justify-between gap-4 h-12 w-[180px] px-2 items-center bg-[#FFFFFF] text-[#A6B1B7] rounded-full hidden cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
-            <span className="flex-1 text-center">Reservation</span>
+            <span className="flex-1 text-center">Apointment</span>
             <img src={Img} alt="Thumbnail" className="w-9 h-9 rounded-full" />
           </button>
         </div>
