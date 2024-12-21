@@ -1,5 +1,9 @@
 import { Activity, CircleArrowLeft, CircleCheck, Dumbbell } from "lucide-react";
 import "./style.css";
+//motion
+import { motion } from "framer-motion";
+//utils
+import { fadeIn } from "../../utils.js";
 
 import WomanImage from "../../../src/assets/womangym.png";
 
@@ -14,14 +18,20 @@ const Index = () => {
 
       {/**HERE IS THE MAIN-CONTAINER */}
       <main className="main-container">
-        <section className="left">
+        <motion.section
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="left"
+        >
           <p>MONDAY 22 </p>
           <h1>
             Hey Noah! You could boost your performance by up to 30% every week!
             Let’s take your eco-conscious journey to the next levels!
           </h1>
           <hr className="underline-main" />
-        </section>
+        </motion.section>
 
         <article className="center">
           <section className="center-content">
@@ -61,7 +71,13 @@ const Index = () => {
           </section>
         </article>
 
-        <section className="right">
+        <motion.section
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="right"
+        >
           <section className="right-content">
             <span>
               <CircleCheck />
@@ -80,7 +96,7 @@ const Index = () => {
               higher productivity!
             </span>
           </section>
-        </section>
+        </motion.section>
       </main>
     </section>
   );

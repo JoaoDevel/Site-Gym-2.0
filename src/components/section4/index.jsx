@@ -1,5 +1,8 @@
 import "./style.css";
-
+//motion
+import { motion } from "framer-motion";
+//utils
+import { fadeIn } from "../../utils";
 const index = () => {
   return (
     <section className="container-section4">
@@ -8,9 +11,15 @@ const index = () => {
           <div className="w-full h-[3px] bg-[#dbdbde] rounded-full">
             <div className="h-[3px] w-[150px] bg-black rounded-full"></div>
           </div>
-          <h2 className="text-5xl font-normal leading-none ">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="text-5xl font-normal leading-none "
+          >
             Tack your healt <br /> progress
-          </h2>
+          </motion.h2>
           <div className="flex gap-4 justify-between w-full items-center">
             <div className="h-[3px]  bg-[#dbdbde] flex-grow "></div>
             <svg
@@ -31,7 +40,13 @@ const index = () => {
           </div>
         </div>
 
-        <div className="h-full flex justify-between items-center flex-col pt-7">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="h-full flex justify-between items-center flex-col pt-7"
+        >
           <h2 className="text-[#515151] font-sans text-lg">
             Stay on top of your goals with our intuitive health <br /> tracking
             tools. Monitor your workouts nutrition,
@@ -40,7 +55,7 @@ const index = () => {
           <button className="bg-[#FFFF] h-12 w-full px-2 rounded-full text-black text-sm font-semibold cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
             DISCOVER MORE
           </button>
-        </div>
+        </motion.div>
       </div>
       <div
         id="container-right"
@@ -51,7 +66,13 @@ const index = () => {
             3 <span className="text-[#515151]">/4</span>
           </p>
 
-          <div className="flex flex-col gap-4 w-full md:w-96">
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="flex flex-col gap-4 w-full md:w-96"
+          >
             <div className="bg-[#EAFE63] h-48 p-4 flex flex-col justify-between rounded-[20px]">
               <div>
                 <h2 className="text-[#515151] text-md font-normal">
@@ -104,7 +125,7 @@ const index = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

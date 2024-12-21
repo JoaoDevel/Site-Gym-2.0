@@ -3,6 +3,10 @@ import Logo from "../../assets/logogym.png";
 import Img from "../../assets/imglogo.jpg";
 import menu from "../../assets/menuhamburguer.png";
 import closer from "../../assets/closer.png";
+//motion
+import { motion } from "framer-motion";
+// utils
+import { fadeIn } from "../../utils.js";
 
 import { useState } from "react";
 
@@ -52,7 +56,13 @@ const Index = () => {
         </div>
       )}
 
-      <header className="flex justify-between items-center relative z-10">
+      <motion.header
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex justify-between items-center relative z-10"
+      >
         <img
           src={Logo}
           alt="Logo"
@@ -93,9 +103,15 @@ const Index = () => {
             <img src={menu} onClick={handleOpen} className="flex md:hidden" />
           )}
         </div>
-      </header>
+      </motion.header>
 
-      <div className="relative z-10">
+      <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="relative z-10"
+      >
         <h1 className="text-4xl md:text-7xl text-white">
           Unlock your potential,
           <br />
@@ -116,7 +132,7 @@ const Index = () => {
             <img src={Img} alt="Thumbnail" className="w-9 h-9 rounded-full" />
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
