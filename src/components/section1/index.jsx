@@ -3,6 +3,7 @@ import Logo from "../../assets/logogym.png";
 import Img from "../../assets/imglogo.jpg";
 import menu from "../../assets/menuhamburguer.png";
 import closer from "../../assets/closer.png";
+import video from "../../assets/video.webm";
 //motion
 import { motion } from "framer-motion";
 // utils
@@ -17,16 +18,16 @@ const Index = () => {
   const handleCloser = () => setShowModel(false);
 
   return (
-    <section className="container-section1 overflow-hidden">
-      {/* <video
+    <section className="container-section1 relative overflow-hidden w-full h-screen">
+      <video
         autoPlay
         loop
         muted
         className="absolute inset-0 w-full h-full object-cover z-[0]"
       >
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
+        <source src={video} type="video/webm" />
+        Seu navegador não suporta a tag de vídeo.
+      </video>
 
       {ShowModel && (
         <div
@@ -110,14 +111,13 @@ const Index = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="relative z-10"
       >
-        <h1 className="text-4xl md:text-7xl text-white">
+        <h1 className="text-4xl md:text-7xl text-white relative overflow-hidden">
           Unlock your potential,
           <br />
           fitness <span>&</span> health hub.
         </h1>
-        <p className="mt-5 max-w-[640px] text-white font-light text-sm md:text-[13px]">
+        <p className="mt-5 max-w-[640px] text-white font-light text-sm md:text-[13px] relative overflow-hidden">
           Every rep, every drop of sweat, every minute in the gym brings you
           closer to your goal. Remember, it´s not just about lifting weights,
           but about lifting yourself up to every challenge. Let´s go, you got
@@ -128,7 +128,7 @@ const Index = () => {
             LEARN MORE
           </button>
           <button className="md:flex justify-between gap-4 h-12 w-[180px] px-2 items-center bg-[#FFFFFF] text-[#A6B1B7] rounded-full hidden cursor-pointer transform hover:translate-y-1 hover:scale-105 transition-all duration-300">
-            <span className="flex-1 text-center">Watch Video</span>
+            <span className="flex-1 text-center">Reservation</span>
             <img src={Img} alt="Thumbnail" className="w-9 h-9 rounded-full" />
           </button>
         </div>
